@@ -19,3 +19,17 @@ def cbc_3des_comparison():
 
 if __name__ == "__main__":
     cbc_3des_comparison()
+
+OUTPUT:Options:
+a) Security: 3DES with three independent keys (EDE3)
+   - Most secure: K1, K2, K3 all different
+   - Effective key length: 168 bits
+
+b) Performance: 3DES with two keys (EDE2)
+   - Faster: K1 = K3, only K2 is different
+   - Effective key length: 112 bits
+   - Better performance, acceptable security
+
+Choose (a/b): A
+
+Recommendation: Use EDE3 mode for maximum security
