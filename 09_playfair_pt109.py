@@ -33,3 +33,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+OUTPUT:
+=== Decrypt PT-109 Message ===
+Enter keyword for matrix: NAVY
+Ciphertext: KXJEYUREBEZWEHEWRYTUHEYFSKREHEGOYFIWTTTUOLKSYCAJPOBOTEIZONTXBYBNTGONEYCUZWRGDSONSXBOUYWRHEBAAHYDSEDQ
+Decrypt using playfair matrix
