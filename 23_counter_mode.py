@@ -24,3 +24,14 @@ def counter_mode():
 
 if __name__ == "__main__":
     counter_mode()
+
+OUTPUT:Plaintext blocks: ['00000001', '00000010', '00000100']
+Key: 0111111101
+Counter starts at: 00000000
+
+Counter Mode process:
+C1 = P1 ⊕ E(K, Counter+0)
+C2 = P2 ⊕ E(K, Counter+1)
+C3 = P3 ⊕ E(K, Counter+2)
+
+Expected ciphertext: 00111000 01001111 00110010
