@@ -42,3 +42,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+OUTPUT:
+=== Vigenere Cipher ===
+'e' for encrypt, 'd' for decrypt: e
+Enter text: ADHAVAN
+Enter key: 3
+Encrypted: MPTMHMZ
