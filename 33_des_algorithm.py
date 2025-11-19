@@ -34,3 +34,31 @@ def des_algorithm():
 
 if __name__ == "__main__":
     des_algorithm()
+
+OUTPUT:DES Parameters:
+- Block size: 64 bits
+- Key size: 56 bits (64 bits with parity)
+- Rounds: 16
+- Structure: Feistel network
+
+DES Process:
+1. Initial Permutation (IP)
+2. Split into L0 and R0 (32 bits each)
+3. 16 rounds of:
+   Li = Ri-1
+   Ri = Li-1 ⊕ F(Ri-1, Ki)
+4. Swap L16 and R16
+5. Final Permutation (IP^-1)
+
+F Function:
+- Expansion (32 → 48 bits)
+- XOR with subkey (48 bits)
+- S-boxes (48 → 32 bits)
+- Permutation (P)
+
+Key Schedule:
+- PC-1: 64 → 56 bits
+- Split into C0, D0 (28 bits each)
+- 16 rounds of left shifts
+- PC-2: 56 → 48 bits per round
+
