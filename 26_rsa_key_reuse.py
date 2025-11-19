@@ -26,3 +26,20 @@ def rsa_key_reuse():
 
 if __name__ == "__main__":
     rsa_key_reuse()
+
+OUTPUT:Scenario:
+- Bob's private key d is leaked
+- Bob wants to generate new key pair
+- Question: Can he reuse modulus n?
+
+Answer: NO - This is UNSAFE!
+
+Reasons:
+1. If attacker has old private key d:
+   - They know φ(n) from e and d
+   - They can factor n using φ(n)
+   - Any new key pair with same n is compromised
+
+2. Even without old key:
+   - Reusing n is bad practice
+   - Multiple keys with same modulus can be attacked
