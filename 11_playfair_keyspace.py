@@ -21,3 +21,10 @@ def playfair_keyspace():
 
 if __name__ == "__main__":
     playfair_keyspace()
+
+OUTPUT:
+UT:Total possible keys: 25! = 15511210043330985984000000
+Approximately: 2^83
+
+Effectively unique keys: 6.20e+23
+Approximately: 2^79
