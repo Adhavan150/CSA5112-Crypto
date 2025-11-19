@@ -31,3 +31,20 @@ def diffie_hellman():
 
 if __name__ == "__main__":
     diffie_hellman()
+
+OUTPUT:Enter prime p (e.g., 23): 23
+Enter generator g (e.g., 5): 5
+
+Public parameters: p=23, g=5
+
+Alice's private key a: 22
+Alice sends: A = g^a mod p = 1
+
+Bob's private key b: 99
+Bob sends: B = g^b mod p = 22
+
+Alice computes: B^a mod p = 1
+Bob computes: A^b mod p = 1
+
+Shared secret: 1
+✓ Key exchange successful!
