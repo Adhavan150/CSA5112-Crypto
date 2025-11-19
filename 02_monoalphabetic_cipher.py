@@ -34,3 +34,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+OUTPUT:
+=== Monoalphabetic Cipher ===
+'e' for encrypt, 'd' for decrypt: d
