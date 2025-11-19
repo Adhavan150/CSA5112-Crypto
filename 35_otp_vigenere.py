@@ -35,3 +35,8 @@ def otp_vigenere():
 
 if __name__ == "__main__":
     otp_vigenere()
+
+OUTPUT:Enter plaintext: HELLO
+Enter key stream (space-separated numbers 0-25): 23
+ERROR!
+Error: Key stream too short!
