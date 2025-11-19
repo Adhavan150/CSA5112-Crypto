@@ -10,3 +10,13 @@ def des_key_schedule():
 
 if __name__ == "__main__":
     des_key_schedule()
+
+OUTPUT:
+For encryption:
+Keys used: K1, K2, K3, ..., K15, K16
+
+For decryption:
+Keys used: K16, K15, K14, ..., K2, K1 (reverse order)
+
+Shift schedule remains same, applied in reverse
+This maintains the Feistel structure property
