@@ -28,3 +28,21 @@ def cmac_subkey_generation():
 
 if __name__ == "__main__":
     cmac_subkey_generation()
+
+OUTPUT:Algorithm:
+1. L = E(K, 0^n) - Encrypt block of zeros
+2. If MSB(L) = 0: K1 = L << 1
+   If MSB(L) = 1: K1 = (L << 1) ⊕ Rb
+3. If MSB(K1) = 0: K2 = K1 << 1
+   If MSB(K1) = 1: K2 = (K1 << 1) ⊕ Rb
+
+Constants (Rb):
+- 64-bit blocks: Rb = 0x1B
+  Binary: 00011011
+- 128-bit blocks: Rb = 0x87
+  Binary: 10000111
+
+Why left shift and XOR?
+- Implements multiplication by x in GF(2^n)
+- Ensures subkeys are independent
+- XOR with Rb handles overflow
