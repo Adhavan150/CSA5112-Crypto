@@ -22,3 +22,22 @@ def cbc_error_propagation():
 
 if __name__ == "__main__":
     cbc_error_propagation()
+
+OUTPUT:Part a) Error in transmitted ciphertext C1:
+- P1 is completely corrupted (all bits affected)
+- P2 has same bit error as C1 (1 bit affected)
+- P3, P4, ... are NOT affected
+Conclusion: Error affects only 2 blocks
+
+Part b) Bit error in source plaintext P1:
+At sender:
+- C1 is affected (1 bit error)
+- C2 is completely affected (avalanche effect)
+- C3, C4, ... are NOT affected
+
+At receiver:
+- P1 recovered correctly (1 bit error)
+- P2 completely corrupted
+- P3 onwards are correct
+
+Error propagates through 2 ciphertext blocks
