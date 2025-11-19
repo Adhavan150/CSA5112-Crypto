@@ -17,3 +17,27 @@ def hill_attack():
 
 if __name__ == "__main__":
     hill_attack()
+
+OUTPUT:Given sufficient plaintext-ciphertext pairs:
+
+C = K × P (mod 26)
+Solve for K: K = C × P^(-1) (mod 26)
+
+For 2×2 matrix, need 2 character pairs
+For 3×3 matrix, need 3 character pairs
+
+Chosen plaintext attack is even easier:
+Choose P = I (identity matrix)
+Then C = K directly!
+
+OUTPUT:Given sufficient plaintext-ciphertext pairs:
+
+C = K × P (mod 26)
+Solve for K: K = C × P^(-1) (mod 26)
+
+For 2×2 matrix, need 2 character pairs
+For 3×3 matrix, need 3 character pairs
+
+Chosen plaintext attack is even easier:
+Choose P = I (identity matrix)
+Then C = K directly!
