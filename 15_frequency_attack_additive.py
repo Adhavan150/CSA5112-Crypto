@@ -22,3 +22,40 @@ def frequency_attack_additive():
 
 if __name__ == "__main__":
     frequency_attack_additive()
+
+OUTPUT:
+=== Frequency Attack on Additive Cipher ===
+Enter ciphertext: KHOOR ZRUOG
+How many top results? (default 10):
+
+Top 10 possible plaintexts:
+
+1. Shift 0:
+KHOOR ZRUOG
+
+2. Shift 1:
+JGNNQ YQTNF
+
+3. Shift 2:
+IFMMP XPSME
+
+4. Shift 3:
+HELLO WORLD
+
+5. Shift 4:
+GDKKN VNQKC
+
+6. Shift 5:
+FCJJM UMPJB
+
+7. Shift 6:
+EBIIL TLOIA
+
+8. Shift 7:
+DAHHK SKNHZ
+
+9. Shift 8:
+CZGGJ RJMGY
+
+10. Shift 9:
+BYFFI QILFX
