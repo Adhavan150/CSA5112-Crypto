@@ -36,3 +36,22 @@ def frequency_attack_mono():
 
 if __name__ == "__main__":
     frequency_attack_mono()
+
+OUTPUT:
+=== Frequency Attack on Monoalphabetic Cipher ===
+Enter ciphertext: ZIT JXOEI QGM TEWZIT RCBKU FWJVT
+
+Frequency analysis mapping:
+T → E
+I → T
+Z → A
+J → O
+E → I
+O → N
+X → S
+W → H
+Q → R
+G → D
+
+Decrypted text:
+AET SNIET DRM HAHEAT BUDKO SIJVE
