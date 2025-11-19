@@ -22,3 +22,7 @@ def frequency_attack_mono():
 
 if __name__ == "__main__":
     frequency_attack_mono()
+
+OUTPUT:Enter ciphertext: HELLO
+
+Decrypted: TAEEO
