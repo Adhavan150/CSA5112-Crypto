@@ -32,3 +32,32 @@ def dsa_vs_rsa_signatures():
 
 if __name__ == "__main__":
     dsa_vs_rsa_signatures()
+
+OUTPUT:DSA (Digital Signature Algorithm):
+- Uses random k for each signature
+- Same message → Different signatures each time
+- Signature includes randomness
+- Format: (r, s) where r depends on k
+
+RSA Signatures:
+- Deterministic process
+- Same message → Same signature always
+- Signature: S = M^d mod n
+
+Implications:
+
+1. Randomness:
+   DSA: Provides randomness, harder to analyze
+   RSA: Reproducible, easier to verify/cache
+
+2. Security:
+   DSA: k must be secret and random (critical!)
+   RSA: No randomness requirement
+
+3. Verification:
+   DSA: Cannot predict signature
+   RSA: Can precompute signature
+
+4. Non-repudiation:
+   Both provide non-repudiation
+   DSA randomness doesn't affect this
