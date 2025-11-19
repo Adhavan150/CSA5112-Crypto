@@ -1,4 +1,3 @@
-# Program 2: Monoalphabetic Substitution Cipher
 def monoalphabetic_encrypt(plaintext, key):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     plaintext = plaintext.upper()
@@ -9,7 +8,6 @@ def monoalphabetic_encrypt(plaintext, key):
         else:
             result += char
     return result
-
 def monoalphabetic_decrypt(ciphertext, key):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     ciphertext = ciphertext.upper()
@@ -20,21 +18,20 @@ def monoalphabetic_decrypt(ciphertext, key):
         else:
             result += char
     return result
-
 def main():
     print("=== Monoalphabetic Cipher ===")
     choice = input("'e' for encrypt, 'd' for decrypt: ").lower()
     text = input("Enter text: ")
-    key = input("Enter 26-letter key: ").upper()
-    
+    key = input("Enter 26-letter key: ").upper()    
     if choice == 'e':
         print(f"Encrypted: {monoalphabetic_encrypt(text, key)}")
     else:
         print(f"Decrypted: {monoalphabetic_decrypt(text, key)}")
-
 if __name__ == "__main__":
     main()
-
 OUTPUT:
 === Monoalphabetic Cipher ===
 'e' for encrypt, 'd' for decrypt: d
+Enter text: adhavan
+Enter 26-letter key: 148124116
+Decrypted: ADHAVAN
