@@ -33,3 +33,23 @@ def padding_explanation():
 
 if __name__ == "__main__":
     padding_explanation()
+
+OUTPUT:Requirement:
+Plaintext must be multiple of block size
+- DES/3DES: 64-bit blocks (8 bytes)
+- AES: 128-bit blocks (16 bytes)
+
+Padding method:
+Add '1' bit followed by '0' bits
+
+Examples (8-byte blocks):
+
+1. Message: 7 bytes
+   Padding: 10000000 (1 byte)
+
+2. Message: 5 bytes
+   Padding: 10000000 00000000 00000000 (3 bytes)
+
+3. Message: 8 bytes (complete block)
+   Padding: 10000000 00000000 ... (8 bytes)
+   Add entire padding block!
