@@ -46,3 +46,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+OUTPUT:
+=== Playfair Cipher ===
+Enter keyword: aa
+Enter plaintext: Adhavan
+Encrypted: BEFCAFSC
