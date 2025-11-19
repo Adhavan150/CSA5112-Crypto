@@ -29,3 +29,10 @@ def break_affine():
 
 if __name__ == "__main__":
     break_affine()
+
+OUTPUT:
+=== Break Affine Cipher ===
+Most frequent ciphertext letter: A
+Second most frequent letter: D
+
+Found key: a=21, b=20
