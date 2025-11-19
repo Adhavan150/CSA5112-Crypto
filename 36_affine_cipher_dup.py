@@ -32,3 +32,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+OUTPUT:Valid 'a' values: 1,3,5,7,9,11,15,17,19,21,23,25
+Enter plaintext: HELLO
+Enter a: 3
+Enter b: 7
+Encrypted: CTOOX
