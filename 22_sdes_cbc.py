@@ -22,3 +22,13 @@ def sdes_cbc():
 
 if __name__ == "__main__":
     sdes_cbc()
+
+OUTPUT:Plaintext: 0000000100100011
+Key: 0111111101
+IV: 10101010
+
+CBC Mode process:
+C1 = E(K, P1 ⊕ IV)
+C2 = E(K, P2 ⊕ C1)
+
+Expected ciphertext: 11110100 00001011
