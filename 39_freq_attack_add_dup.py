@@ -23,3 +23,23 @@ def frequency_attack_additive():
 
 if __name__ == "__main__":
     frequency_attack_additive()
+
+OUTPUT:Enter ciphertext: PY
+Top N results (default 10): 8
+Top 8 possibilities:
+1. Shift 0:
+PY
+2. Shift 1:
+OX
+3. Shift 2:
+NW
+4. Shift 3:
+MV
+5. Shift 4:
+LU
+6. Shift 5:
+KT
+7. Shift 6:
+JS
+8. Shift 7:
+IR
