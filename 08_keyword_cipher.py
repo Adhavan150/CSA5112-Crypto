@@ -24,3 +24,13 @@ def keyword_cipher():
 
 if __name__ == "__main__":
     keyword_cipher()
+
+OUTPUT:
+=== Keyword Cipher ===
+Enter keyword: SECRET
+Enter plaintext: HELLO WORLD
+
+Plain:  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Cipher: SECRTABDFGHIJKLMNOPQUVWXYZ
+
+Encrypted: CITTB WBNTA
