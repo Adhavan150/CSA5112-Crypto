@@ -28,3 +28,12 @@ def frequency_attack_mono():
 
 if __name__ == "__main__":
     frequency_attack_mono()
+
+OUTPUT:Enter ciphertext: LELELE
+
+Top 10 frequency mappings:
+L → E
+E → T
+
+Decrypted text (top 1 result):
+ETETET
