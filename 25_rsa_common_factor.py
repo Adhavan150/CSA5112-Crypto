@@ -33,3 +33,24 @@ def rsa_common_factor_attack():
 
 if __name__ == "__main__":
     rsa_common_factor_attack()
+
+OUTPUT:Scenario:
+- We have ciphertext blocks encrypted with RSA
+- n = p × q (public modulus)
+- Someone tells us a plaintext block shares a factor with n
+
+Attack:
+If plaintext P shares a factor with n:
+1. Compute gcd(P, n)
+2. This gives us either p or q
+3. We can then find the other factor
+4. Calculate φ(n) = (p-1)(q-1)
+5. Find private key d
+
+Example:
+n = 3599
+Plaintext = 59
+gcd(plaintext, n) = 59
+
+Factors found: 59 and 61
+RSA system is broken!
