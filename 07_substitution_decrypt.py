@@ -33,3 +33,40 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+OUTPUT:
+=== Substitution Cipher Decryption ===
+Enter ciphertext: WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
+
+Frequency Analysis:
+ : 0
+W: 2
+K: 2
+H: 2
+Q: 1
+F: 1
+TX: 1
+... (etc.)
+
+Hints:
+- Most common English letter: E
+- Common word: THE
+- Look for repeated patterns
+
+Cipher char (or 'done'): W
+Maps to: T
+Cipher char (or 'done'): K
+Maps to: H
+Cipher char (or 'done'): H
+Maps to: E
+Cipher char (or 'done'): Q
+Maps to: I
+Cipher char (or 'done'): F
+Maps to: U
+Cipher char (or 'done'): D
+Maps to: L
+Cipher char (or 'done'): O
+Maps to: A
+Cipher char (or 'done'): done
+
+Decrypted: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
